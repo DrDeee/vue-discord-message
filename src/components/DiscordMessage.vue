@@ -5,7 +5,7 @@
 		</div>
 		<div class="discord-message-content">
 			<div v-if="!compactMode">
-				<author-info :bot="user.bot" :role-color="user.roleColor">
+				<author-info :bot="user.bot" :banned="user.banned" :role-color="user.roleColor">
 					{{ user.author }}
 				</author-info>
 				<span class="discord-message-timestamp">
@@ -47,6 +47,7 @@ export default {
 		},
 		avatar: String,
 		bot: Boolean,
+		banned: Boolean,
 		edited: Boolean,
 		roleColor: String,
 		timestamp: {
@@ -70,7 +71,7 @@ export default {
 			const resolveAvatar = avatar => $discordMessage.avatars[avatar] || avatar || $discordMessage.avatars.default;
 
 			const profile = $discordMessage.profiles[this.profile] || {};
-			const props = { author: this.author, bot: this.bot, roleColor: this.roleColor };
+			const props = { author: this.author, bot: this.bot, banned: this.banned, roleColor: this.roleColor };
 
 			return Object.assign(props, profile, { avatar: resolveAvatar(this.avatar || profile.avatar) });
 		},

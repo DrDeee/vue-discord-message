@@ -6,6 +6,9 @@
 		<span v-if="bot" class="discord-bot-tag">
 			Bot
 		</span>
+		<span v-if="banned" class="discord-bot-tag banned">
+			Gebannt
+		</span>
 	</span>
 </template>
 
@@ -14,6 +17,7 @@ export default {
 	name: 'AuthorInfo',
 	props: {
 		bot: Boolean,
+		banned: Boolean,
 		roleColor: String,
 	},
 };
@@ -45,6 +49,10 @@ export default {
 	border-radius: 3px;
 	line-height: 100%;
 	text-transform: uppercase;
+}
+
+.discord-message .discord-author-info .discord-bot-tag .banned{
+	background-color: #e41b1b;
 }
 
 .discord-light-theme .discord-message .discord-author-info .discord-bot-tag {

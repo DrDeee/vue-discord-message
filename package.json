@@ -1,44 +1,44 @@
 {
-  "name": "vue-discord-message",
-  "version": "5.0.3",
-  "description": "Vue components to easily build and display fake Discord messages on your webpages.",
-  "keywords": [
-    "vue",
-    "discord",
-    "message",
-    "fake",
-    "mock",
-    "component",
-    "embed"
-  ],
-  "homepage": "https://vue-discord-message.netlify.app/",
-  "repository": "https://github.com/Danktuary/vue-discord-message.git",
-  "author": "Sanctuary <sanc.pw@gmail.com>",
-  "license": "MIT",
-  "main": "dist/VueDiscordMessage.umd.js",
-  "module": "dist/VueDiscordMessage.common.js",
-  "unpkg": "dist/VueDiscordMessage.umd.min.js",
-  "scripts": {
-    "build": "vue-cli-service build --target lib --name VueDiscordMessage ./src/index.js",
-    "docs:serve": "vuepress dev docs --open",
-    "docs:build": "vuepress build docs",
-    "lint": "eslint . --ext js,vue",
-    "prepublishOnly": "npm run build"
-  },
-  "dependencies": {
-    "hex-to-rgba": "^1.0.1"
-  },
-  "devDependencies": {
-    "@dovyp/vuepress-plugin-clipboard-copy": "^1.0.0-alpha.7",
-    "@vue/cli-plugin-babel": "^3.0.1",
-    "@vue/cli-plugin-eslint": "^3.0.1",
-    "@vue/cli-service": "^3.0.1",
-    "babel-eslint": "^9.0.0",
-    "eslint": "^5.5.0",
-    "eslint-config-sora": "^2.0.0",
-    "eslint-plugin-vue": "^4.7.1",
-    "vue": "^2.5.16",
-    "vue-template-compiler": "^2.5.16",
-    "vuepress": "^1.2.0"
-  }
+    "name": "vue-discord-message",
+    "version": "5.0.2",
+    "description": "Vue components to easily build and display fake Discord messages on your webpages.",
+    "keywords": [
+        "vue",
+        "discord",
+        "message",
+        "fake",
+        "mock",
+        "component",
+        "embed"
+    ],
+    "homepage": "https://vue-discord-message.netlify.app/",
+    "repository": "https://github.com/Danktuary/vue-discord-message.git",
+    "author": "Sanctuary <sanc.pw@gmail.com>",
+    "license": "MIT",
+    "main": "dist/VueDiscordMessage.umd.js",
+    "module": "dist/VueDiscordMessage.common.js",
+    "unpkg": "dist/VueDiscordMessage.umd.min.js",
+    "scripts": {
+        "build": "vue-cli-service build --target lib --name VueDiscordMessage ./src/index.js",
+        "docs:serve": "vuepress dev docs --open",
+        "docs:build": "vuepress build docs",
+        "lint": "eslint . --ext js,vue",
+        "prepublishOnly": "npm run build"
+    },
+    "dependencies": {
+        "hex-to-rgba": "^1.0.1"
+    },
+    "devDependencies": {
+        "@dovyp/vuepress-plugin-clipboard-copy": "^1.0.0-alpha.7",
+        "@vue/cli-plugin-babel": "^3.0.1",
+        "@vue/cli-plugin-eslint": "^3.0.1",
+        "@vue/cli-service": "^3.0.1",
+        "babel-eslint": "^9.0.0",
+        "eslint": "^5.5.0",
+        "eslint-config-sora": "^2.0.0",
+        "eslint-plugin-vue": "^4.7.1",
+        "vue": "^2.5.16",
+        "vue-template-compiler": "^2.5.16",
+        "vuepress": "^1.2.0"
+    }
 }
